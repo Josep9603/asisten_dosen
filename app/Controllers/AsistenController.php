@@ -41,7 +41,7 @@ class AsistenController extends BaseController
         if ($session->has('username')) {
             $username = $session->get('username');
             $data = [
-                'title' => 'Simpan | Web Denata',
+                'title' => 'save',
                 'asisten' => $this->asistenModel->getAsisten(),
                 'username' => $username
             ];
@@ -77,7 +77,7 @@ class AsistenController extends BaseController
         if ($session->has('username')) {
             $username = $session->get('username');
             $data = [
-                'title' => 'Hapus | Web Denata',
+                'title' => 'delete',
                 'asisten' => $this->asistenModel->getAsisten(),
                 'username' => $username
             ];
@@ -105,7 +105,7 @@ class AsistenController extends BaseController
         if ($session->has('username')) {
             $username = $session->get('username');
             $data = [
-                'title' => 'Update | Web Denata',
+                'title' => 'update',
                 'asisten' => $this->asistenModel->getAsisten(),
                 'username' => $username
             ];
@@ -136,7 +136,7 @@ class AsistenController extends BaseController
         if ($session->has('username')) {
             $username = $session->get('username');
             $data = [
-                'title' => 'Search | Web Denata',
+                'title' => 'search',
                 'asisten' => $this->asistenModel->getAsisten(),
                 'username' => $username
             ];
