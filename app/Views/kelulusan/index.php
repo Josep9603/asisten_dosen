@@ -18,7 +18,7 @@
       >
         <h1>Kelulusan</h1>
       </div>
-      <form action="../prosesKelulusan" method="post">
+      <form action="../prosesKelulusan" method="get">
         <div class="input-group mb-3">
           <span class="input-group-text" id="inputGroup-sizing-default"
             >NIM</span

@@ -4,9 +4,9 @@ class StatusKelulusan extends BaseController
 {
     public function prosesKelulusan()
     {
-        $nama = $this->request->getPost('nama');
-        $nim = $this->request->getPost('nim');
-        $status = $this->request->getPost('status');
+        $nama = $this->request->getGet('nama');
+        $nim = $this->request->getGet('nim');
+        $status = $this->request->getGet('status');
         
         $data['nama'] = $nama;
         $data['nim'] = $nim;

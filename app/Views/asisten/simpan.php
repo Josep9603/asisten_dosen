@@ -6,7 +6,7 @@
     <h1 class="display-4">Pendaftaran Asisten Praktikum</h1>
     <p class="lead">Data ini akan disimpan kedalam data base</p>
     <hr class="my-4">
-    <form method="post" action="/asisten/simpan">
+    <form method="post" action="/asisten/simpan"><?= csrf_field() ?>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="form-group">

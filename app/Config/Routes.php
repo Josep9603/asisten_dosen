@@ -29,13 +29,13 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-// $routes->get('/', 'Home::index');
-// $routes->get('ktp', 'Ktp::index');
-// $routes->get('ktm', 'Ktp::ktm');
-// $routes->get('input', 'PesanController::input');
-// $routes->get('proses', 'PesanController::proses');
-// $routes->get('inputKelulusan', 'StatusKelulusan::inputKelulusan');
-// $routes->post('prosesKelulusan', 'StatusKelulusan::prosesKelulusan');
+$routes->get('/', 'Home::index');
+$routes->get('ktp', 'Ktp::index');
+$routes->get('ktm', 'Ktp::ktm');
+$routes->get('input', 'PesanController::input');
+$routes->get('proses', 'PesanController::proses');
+$routes->get('inputKelulusan', 'StatusKelulusan::inputKelulusan');
+$routes->get('prosesKelulusan', 'StatusKelulusan::prosesKelulusan');
 $routes->get('login', 'Login::index');
 
 $routes->get('/asisten', 'AsistenController::index');
@@ -44,6 +44,9 @@ $routes->get('asisten/logout', "AsistenController::logout");
 // $routes->get('/update', 'AsistenController::update');
 // $routes->get('/delete', 'AsistenController::delete');
 
+// use App\Controllers\StatusKelulusan;
+// $routes->match(['get', 'post'], 'inputKelulusan', 
+// [AsistenController::class, 'prosesKelulusan']);
 
 use App\Controllers\AsistenController;
 $routes->match(['get', 'post'], 'asisten/simpan', 
